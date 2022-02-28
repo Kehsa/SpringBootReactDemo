@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>React</title>
+	<link rel="stylesheet" href="/src/bootstrap.css">
+	<script src="/src/bootstrap.js"></script>
+	<meta th:name="_csrf_header" th:content="${_csrf.headerName}"/>
+	<meta th:name="_csrf" th:content="${_csrf.token}"/>
+</head>
+<body>
+	<div id="react" class='container-fluid'></div>
+	<div id="modallogindiv"></div>
+	<script src="/src/bundle.js"></script>
+</body>
+</html>
